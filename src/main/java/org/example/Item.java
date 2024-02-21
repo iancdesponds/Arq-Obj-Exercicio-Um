@@ -12,4 +12,8 @@ public class Item {
     public void getNome() {
         System.out.println("Nome: " + nome);
     }
+
+    public String getNomePreco() {
+        return this.nome + ": R$" + this.preco;
+    }
 }

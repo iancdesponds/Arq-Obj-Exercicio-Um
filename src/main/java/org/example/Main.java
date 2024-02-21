@@ -48,7 +48,8 @@ public class Main {
                 String precoItem = scanner.nextLine();
                 Item item = new Item(nomeItem, precoItem);
                 Restaurante restauranteEscolhido = restaurantes.get(escolhaRestaurante);
-                restauranteEscolhido.adicionarItem(nomeItem);
+                String nomeComPrecoItem = item.getNomePreco();
+                restauranteEscolhido.adicionarItem(nomeComPrecoItem);
             } else if (opcao == 4) {
                 System.out.println("Obrigado por utilizar o sistema de cadastro de restaurantes!");
                 break;
